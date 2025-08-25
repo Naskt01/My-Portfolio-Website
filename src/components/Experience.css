@@ -1,0 +1,150 @@
+.experience-section {
+    position: relative;
+    background-image: url('../Assets/Bg.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 5rem 5rem 8rem;
+    width: 100%;
+    min-height: 100vh;
+    color: var(--color-bg);
+    overflow: hidden;
+    z-index: 1;
+    display: grid;
+    margin-top: 0; 
+    margin-bottom: 0;    
+}
+/* Top Wave */
+
+.experience-wave-top {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    height: fit-content;
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+/* EXPERIENCE HEADING */
+
+.experience-heading {
+    padding: 2rem;
+    display: grid;
+    text-align: center;
+    min-width: 240px;
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+}
+.experience-heading h5 {
+    font-size: 1rem;
+    color: var(--color-primary);
+}
+.experience-heading h2{
+    color: black;
+}
+/* EXPERIENCE DETAILS & INFORMATION */
+
+.experience-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.experience-container > div {
+    background: var(--color-primary);
+    padding: 2rem;
+    border-radius: 2.5rem;
+    margin-top: -20px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--color-primary);
+    transition: all 0.3s ease-in-out;
+}
+
+.experience-container > div:hover {
+    border: 3px solid var(--color-primary);
+    box-shadow: 0 0 8px var(--color-primary);
+    transform: translateY(-2px);
+    border-radius: 2rem;
+    background: transparent;
+    color: var(--color-primary);
+}
+
+.skill-experience:hover * {
+    color: var(--color-primary) !important;
+}
+.experience-container > div h3 {
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.experience-card:hover {
+    background-color: transparent;
+    border: 3px solid var(--color-primary);
+    box-shadow: 0 0 8px var(--color-primary);
+    transform: translateY(-2px);
+    border-radius: 2rem;
+    cursor: default;
+}
+.experience-card:hover * {
+    color: var(--color-primary) !important;
+}
+
+.experience-card h4 {
+    font-size: 1rem;
+    color: whitesmoke;
+}
+
+.experience-content2 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    row-gap: 1rem;
+}
+
+.experience-details {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.experience-details .icons {
+    margin-top: 6px;
+    color: whitesmoke;
+}
+
+/* DECORATIVE WAVE BOTTOM  */
+
+.experience-wave-bottom {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    pointer-events: none;
+  
+}
+
+/**************************** MEDIA QUERIES (MEDIUM DEVICES) ***************************/
+@media screen and (max-width: 1024px) {
+    .experience-container {
+        grid-template-columns: 1fr;
+    }
+    .experience-container > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+}
+/**************************** MEDIA QUERIES (SMALL DEVICES) ***************************/
+@media screen and (max-width: 600px) {
+    .experience-container {
+        gap: 1rem;
+    }
+
+    .experience-container > div {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    
+}
